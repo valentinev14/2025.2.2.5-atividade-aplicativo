@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="progress-section">
+            <div class="progress-info">
+                <span>Progresso de Hoje</span>
+                <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div id="progressBarFill" class="progress-bar-fill"></div>
+            </div>
+        </div>
+
+        <h1>Meus Hábitos</h1>
+        
+        <div class="input-group">
+            <input type="text" id="habitInput" placeholder="Ex: Meditar 10min">
+            <button id="addBtn" onclick="addHabit()">+</button>
+        </div>
+
+        <div id="habitList" class="habit-list">
+            </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="nav-item active">🏠<span>Home</span></div>
+        <div class="nav-item">📊<span>Stats</span></div>
+        <div class="nav-item">⚙️<span>Config</span></div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
