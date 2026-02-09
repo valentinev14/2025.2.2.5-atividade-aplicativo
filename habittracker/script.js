@@ -100,7 +100,6 @@ function renderHabits() {
             const today = new Date().toLocaleDateString();
             const isDoneToday = habit.lastUpdated === today;
 
-            // Criando o elemento HTML conforme a estética solicitada
             const habitCard = document.createElement("div");
             habitCard.className = "habit-card";
             if (isDoneToday) habitCard.style.opacity = "0.6";
